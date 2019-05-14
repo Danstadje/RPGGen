@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="20"
+    android:background="@drawable/generator_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="18">
+
+        <LinearLayout
+            android:id="@+id/charList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerPadding="4dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/charStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/name"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charHealthLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/health"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charHealth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charRaceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/race"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charRace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charMagickaLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/magicka"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charMagicka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charClassLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Classes"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charStrengthLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/strength"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charStrength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charAgeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/age"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charDexterityLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dexterity"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charDexterity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charGenderLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/gender"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charCharismaLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/charisma"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charCharisma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charLuckLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/luck"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/charLuck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charDescriptionLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/description"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/charDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7.5"
+                        android:textColor="#FFFFFFFF" />
+
+                </TableRow>
+
+                <TableRow android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="4"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="#FA0202"
+            android:text="@string/back"
+            android:gravity="center"
+            android:onClick="mainMenu"/>
+    </LinearLayout>
+
+</LinearLayout>

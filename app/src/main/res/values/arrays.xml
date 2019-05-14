@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Race">
+        <item>Ember</item>
+        <item>Törpe</item>
+        <item>Tündér</item>
+        <item>Farkasember</item>
+    </string-array>
+    <string-array name="Class">
+        <item>Harcos</item>
+        <item>Íjász</item>
+        <item>Mágus</item>
+        <item>Pap</item>
+        <item>Bérgyilkos</item>
+    </string-array>
+</resources>

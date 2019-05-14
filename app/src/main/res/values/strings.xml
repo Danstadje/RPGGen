@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">RPGGEN</string>
+    <string name="Generator">Generálás</string>
+    <string name="Characterlist">Generált karakterek</string>
+    <string name="exit">Kilépés</string>
+    <string name="race">Faj:</string>
+    <string name="Classes">Kaszt:</string>
+    <string name="male">Férfi</string>
+    <string name="female">Nő</string>
+    <string name="gender">Nem:</string>
+    <string name="back">Vissza</string>
+    <string name="dexterity">Ügyesség:</string>
+    <string name="magicka">Mágia:</string>
+    <string name="strength">Erő:</string>
+    <string name="health">Életerő:</string>
+    <string name="charisma">Karizma:</string>
+    <string name="luck">Szerencse:</string>
+    <string name="upload">Feltöltés</string>
+    <string name="another">Másik</string>
+    <string name="name">Név:</string>
+    <string name="description">Leírás:</string>
+    <string name="age">Életkor:</string>
 </resources>
