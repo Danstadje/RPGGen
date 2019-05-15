@@ -188,6 +188,7 @@ public class generatorActivity extends AppCompatActivity {
             intent.putExtra(charRace, race);
             intent.putExtra(charClass, Class);
             intent.putExtra(charGender, chosen);
+            finish();
             this.startActivity(intent);
 
         } else {

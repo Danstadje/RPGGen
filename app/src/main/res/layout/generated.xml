@@ -218,7 +218,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/strengthLabel"
         app:layout_constraintStart_toStartOf="@+id/strengthLabel"
-        app:layout_constraintTop_toBottomOf="@id/luckLabel" />
+        app:layout_constraintBottom_toTopOf="@id/Classes" />
 
     <TextView
         android:id="@+id/ClassLabel"
@@ -234,7 +234,8 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/strengthLabel"
         app:layout_constraintStart_toStartOf="@+id/strengthLabel"
-        app:layout_constraintBottom_toTopOf="@id/ageLabel" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <TextView
         android:id="@+id/race"
@@ -266,7 +267,8 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/luck"
         app:layout_constraintStart_toStartOf="@+id/luck"
-        app:layout_constraintBottom_toTopOf="@id/age" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <Button
         android:id="@+id/newButton"
@@ -332,10 +334,9 @@
         android:layout_marginRight="16dp"
         android:text="@string/age"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/ClassLabel"
         app:layout_constraintStart_toStartOf="@id/ClassLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Classes" />
 
     <TextView
         android:id="@+id/age"
@@ -348,10 +349,9 @@
         android:layout_marginRight="16dp"
         android:text="Életkor"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@id/Classes"
+        app:layout_constraintStart_toStartOf="@id/Classes"
+        app:layout_constraintTop_toBottomOf="@+id/Classes" />
 
     <TextView
         android:id="@+id/genderLabel"

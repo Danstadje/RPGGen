@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -46,6 +47,9 @@ public class uploadActivity extends AppCompatActivity {
             jsonObject.put(generatorActivity.charGender, gender);
             jsonObject.put(generatorActivity.charName, name.getText().toString());
             jsonObject.put(generatorActivity.charDesc, desc.getText().toString());
+            Toast.makeText(getApplicationContext(), "Sikeres feltöltés!",
+                    Toast.LENGTH_LONG).show();
+            finish();
 
         } catch (JSONException e) {
             e.printStackTrace();
